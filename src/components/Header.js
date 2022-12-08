@@ -1,9 +1,9 @@
 import React from 'react';
 import { Navbar, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Navbar.scss';
+import './Header.scss';
 
-const Navbar = () => {
+const Header = () => {
     return (
         <Navbar>
             <Container>
@@ -19,4 +19,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Header;

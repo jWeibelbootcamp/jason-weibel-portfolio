@@ -1,5 +1,5 @@
 import React from "react";
-import anime from "animejs";
+import Anime from "animejs";
 import './Home.scss';
 
 const Home = () => {
@@ -13,10 +13,12 @@ const Home = () => {
     titleAnime.scaleIn = [0.2, 1];
     titleAnime.delay = 500;
 
+// basic animation in place - update to zoom in from left and right later.
+
     const animationRef = React.useRef(null);
 
     React.useEffect(() => {
-        animationRef.current = anime.timeline({ loop: false })
+        animationRef.current = Anime.timeline({ loop: false })
             .add({
                 targets: '.nameAnime .name',
                 opacity: nameAnime.opacityIn,

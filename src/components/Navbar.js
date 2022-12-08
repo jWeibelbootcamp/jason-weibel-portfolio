@@ -1,16 +1,21 @@
 import React from 'react';
-import './Navbar.scss';
+import { Navbar, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Navbar.scss';
 
-
-function Navbar() {
+const Navbar = () => {
     return (
-        <div className='navContainer'>
-            <Link to='/jason-weibel-portfolio'>Home</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/projects'>Projects</Link>
-            <Link to='/resume'>Resume</Link>
-        </div>
+        <Navbar>
+            <Container>
+                <Navbar.Toggle />
+                <Navbar.Collapse>
+                    <Link to='/jason-weibel-portfolio'>Home</Link>
+                    <Link to='/about'>About</Link>
+                    <Link to='/projects'>Projects</Link>
+                    <Link to='/resume'>Resume</Link>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 };
 

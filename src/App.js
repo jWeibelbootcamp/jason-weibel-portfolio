@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -12,7 +12,7 @@ import './App.scss';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <div className='mainContainer'>
         <div className='headerContainer'>
           <Header />
@@ -37,7 +37,7 @@ const App = () => {
           </a>
         </div>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 };
 

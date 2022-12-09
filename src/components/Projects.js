@@ -19,17 +19,19 @@ const items = [
 
 class Menu extends Component {
     render() {
-        const { items, center } = this.props
-        return <RadialMenu
+        const { center, items } = this.props
+        return (<RadialMenu
             center={center}
             items={items}
-        />
+        />);
     };
 };
 
 const Projects = () => {
     return (
-        <Menu />
+        <div>
+            <Menu />
+        </div>
     );
 };
 

@@ -8,7 +8,25 @@ import Resume from './components/Resume';
 import gitHub from './images/gitHub.svg';
 import linkedIn from './images/linkedIn.svg';
 import envelope from './images/envelope.svg';
+import Snowfall from 'react-snowfall';
 import './App.scss';
+
+
+// snowfall variables
+const snowflake1 = document.createElement('img');
+snowflake1.src = '/images/flower1.png';
+
+const snowflake2 = document.createElement('img');
+snowflake2.src = '/images/flower2.png';
+
+const snowflake3 = document.createElement('img');
+snowflake3.src = '/images/flower3.png';
+
+const images = [snowflake1, snowflake2, snowflake3];
+const wind = [-0.5, 0.5];
+
+console.log(images)
+// end snowfall variables
 
 const App = () => {
   return (
@@ -35,6 +53,11 @@ const App = () => {
           <a href='mailto:weibel.jason@gmail.com'>
             <img src={envelope} alt='Email' width="50px" height="50px" />
           </a>
+        </div>
+        <div className='snowContainer'>
+          <Snowfall color='pink' snowflakeCount={100} wind={wind}
+          // images={images}
+          />
         </div>
       </div>
     </Router>

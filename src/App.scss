@@ -19,6 +19,18 @@ body {
     background-size: 300%;
 }
 
+.footerContainer {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+.footerContainer img {
+  margin-left: 15px;
+  margin-right: 15px;
+  filter: invert(90%)
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;

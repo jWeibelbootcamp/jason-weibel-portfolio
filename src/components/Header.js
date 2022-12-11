@@ -7,7 +7,6 @@ const Header = () => {
     return (
         <Navbar expand='lg'>
             <Container>
-                <Navbar.Toggle aria-controls='basic-navbar-nav'/>
                 <Navbar.Collapse id='basic-navbar-nav'>
                     <Link to='/'>Home</Link>
                     <Link to='/about'>About</Link>

@@ -31,11 +31,11 @@ console.log(images)
 const App = () => {
   return (
     <Router>
-      <div className='mainContainer'>
+      <div className='bodyContainer'>
         <div className='headerContainer'>
           <Header />
         </div>
-        <div className='bodyContainer'>
+        <div className='mainContainer'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

@@ -6,9 +6,9 @@
   text-align: center;
 }
 
-$color-3: #050750;
-$color-2: #f265fe;
 $color-1: #42ebf7;
+$color-2: #f265fe;
+$color-3: #050750;
 
 body {
   height: 100vh;
@@ -20,7 +20,9 @@ body {
 }
 
 .footerContainer {
-  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
   bottom: 25px;
   right: 25px;
 }

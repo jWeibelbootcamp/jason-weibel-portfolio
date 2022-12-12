@@ -54,11 +54,12 @@ const App = () => {
             <img src={envelope} alt='Email' width="50px" height="50px" />
           </a>
         </div>
-        <div className='snowContainer'>
-          <Snowfall color='pink' snowflakeCount={100} wind={wind}
-          // images={images}
-          />
-        </div>
+      </div>
+      <div className='snowContainer'>
+        <Snowfall color='pink' snowflakeCount={75} wind={wind} speed={[0.5, 1.0]}
+          style={{position: 'fixed', zIndex: -1}}
+        // images={images}
+        />
       </div>
     </Router>
   );

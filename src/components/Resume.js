@@ -5,12 +5,10 @@ import "./Resume.scss";
 
 const Resume = () => {
     return (
-        <div>
-            <h1>
-                <a className='resume' href={ResumePDF}download>
-                    <img src={ResumeImage} alt="My Resume" width="80%" />
-                </a>
-            </h1>
+        <div className="resumeBox">
+            <a className='resumeLink' href={ResumePDF} download>
+                <img className='resume' src={ResumeImage} alt="My Resume" />
+            </a>
         </div>
     );
 };

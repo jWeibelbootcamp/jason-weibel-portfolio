@@ -1,5 +1,18 @@
-.resume {
+.resumeBox {
+    margin-top: 2em;
+    margin-bottom: 4em;
     display: flex;
     justify-content: center;
-    object-fit: fill;
+}
+
+.resumeLink {
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 68%;
+}
+
+.resume {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
 }

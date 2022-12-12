@@ -2,15 +2,19 @@
   font-family: monospace;
 }
 
+.App {
+  text-align: center;
+}
+
 $color-1: #42ebf7;
 $color-2: #f265fe;
 $color-3: #050750;
 
 html {
-  min-height: 100%;
-  background: linear-gradient(15deg, $color-1, $color-2, $color-3);
+  min-height: 100vh;
+  background: linear-gradient(20deg, $color-1, $color-2, $color-3);
     animation: gradient 25s ease infinite;
-    background-size: cover;
+    background-size: 250%;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -18,7 +22,6 @@ html {
 .footerContainer {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
   position: relative;
   bottom: 25px;
   right: 25px;
@@ -40,8 +43,4 @@ html {
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-@media only screen and (max-width: 767px) {
-
 }

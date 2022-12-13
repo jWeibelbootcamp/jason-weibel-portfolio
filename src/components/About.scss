@@ -1,0 +1,26 @@
+.aboutContainer,
+.photoContainer,
+.blurbContainer {
+    display: inline-block;
+}
+
+.aboutContainer {
+    margin: 3em;
+    display: flex;
+}
+
+.photoContainer img {
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: blue;
+    margin-right: 1em;
+}
+
+p {
+    color: antiquewhite;
+    font-size: 14pt;
+    text-align: justify;
+    text-indent: 3em;
+    margin-left: 1em;
+    margin-top: 0;
+}

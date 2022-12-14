@@ -1,19 +1,23 @@
-.aboutContainer,
-.photoContainer,
-.blurbContainer {
-    display: inline-block;
-}
+$color-1: #42ebf7;
+$color-2: #f265fe;
+$color-3: #050750;
 
 .aboutContainer {
     margin: 3em;
-    display: flex;
+    text-align: center;
+}
+
+.photoContainer {
+    position: relative;
+    height: 30em;
+    width: 30em;
+    float: left;
+    margin-right: 1em;
 }
 
 .photoContainer img {
+    width: 30em;
     border-radius: 5px;
-    border-width: 5px;
-    border-color: blue;
-    margin-right: 1em;
 }
 
 p {
@@ -21,6 +25,35 @@ p {
     font-size: 14pt;
     text-align: justify;
     text-indent: 3em;
-    margin-left: 1em;
     margin-top: 0;
+}
+
+.photoContainer:before, .photoContainer:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, $color-1, $color-2, $color-3);
+	background-size: 200%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: gradient 5s ease infinite;
+    border-radius: 5px;
+}
+
+.photoContainer:after {
+    filter: blur(50px);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

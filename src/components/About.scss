@@ -28,6 +28,11 @@ p {
     margin-top: 0;
 }
 
+.techCarousel {
+	position: relative;
+}
+
+// picture border animation
 .photoContainer:before, .photoContainer:after {
 	content: '';
 	position: absolute;
@@ -46,10 +51,6 @@ p {
     filter: blur(50px);
 }
 
-.techCarousel {
-	position: relative;
-}
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -59,5 +60,18 @@ p {
 	}
 	100% {
 		background-position: 0% 50%;
+	}
+}
+// end animation
+
+@media all and (max-width:480px) {
+	.aboutContainer {
+		width: 100vw;
+		text-align: center;
+	}
+	
+	.photoContainer, .photoContainer img {
+		width: 45vw;
+		height: 45vw;
 	}
 }

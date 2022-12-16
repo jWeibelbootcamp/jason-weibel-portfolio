@@ -16,7 +16,7 @@ const TechCarousel = () => (
             display: 'flex',
             justifyContent: 'center',
         }}>
-        <Carousel height={200} width={600} xOrigin={300} xRadius={300} yOrigin={80} yRadius={50} autoPlay={true}>
+        <Carousel height={200} width={600} xOrigin={300} xRadius={300} yOrigin={80} yRadius={50} autoPlay={true} >
             <div key={1}>
                 <img className='techImage' src={JSLogo} alt="Javascript logo" />
             </div>

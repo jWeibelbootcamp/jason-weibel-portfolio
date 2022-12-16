@@ -5,6 +5,7 @@
     height: 90vh;
     color: antiquewhite;
     flex-direction: column;
+    z-index: 1;
 }
 
 h1 {
@@ -13,4 +14,14 @@ h1 {
 
 h3 {
     font-size: 2.5em;
+}
+
+.treeContainer {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+}
+
+.treeContainer img {
+    max-height: 80vh;
 }

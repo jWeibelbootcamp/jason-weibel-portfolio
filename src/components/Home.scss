@@ -1,11 +1,12 @@
 .homeContainer{
+    height: 90vh;
+    z-index: 1;
+}
+
+h1, h3 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 90vh;
     color: antiquewhite;
-    flex-direction: column;
-    z-index: 1;
 }
 
 h1 {
@@ -23,5 +24,23 @@ h3 {
 }
 
 .treeContainer img {
-    max-height: 80vh;
+    height: 75vh;
+}
+
+@media all and (max-width:480px) {
+    .homeContainer {
+        height: 70vh;
+    }
+
+    .treeContainer {
+        left: 0;
+    }
+
+    .treeContainer img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .name, .title {display:flex;
+        text-align: center;}
 }

@@ -1,25 +1,18 @@
 import React from "react";
 import Anime from "animejs";
-import Tree from "../images/pixelTree.png";
+import Tree from "../images/cherryTree.png";
 import './Home.scss';
 
 const Home = () => {
-    let treeAnime = {};
-    treeAnime.opacityIn = [0, 1];
-    treeAnime.scaleIn = [0.2, 1];
-    treeAnime.delay = 500;
-
     let nameAnime = {};
     nameAnime.opacityIn = [0, 1];
-    nameAnime.scaleIn = [0.2, 1];
+    nameAnime.scaleIn = [0.9, 1];
     nameAnime.delay = 500;
 
     let titleAnime = {};
     titleAnime.opacityIn = [0, 1];
-    titleAnime.scaleIn = [0.2, 1];
+    titleAnime.scaleIn = [0.9, 1];
     titleAnime.delay = 500;
-
-    // basic animation in place - update to zoom in from left and right later.
 
     const animationRef = React.useRef(null);
 
@@ -35,11 +28,6 @@ const Home = () => {
                 opacity: titleAnime.opacityIn,
                 scale: titleAnime.scaleIn,
                 delay: titleAnime.delay
-            }).add({
-                targets: '.treeAnime .tree',
-                opacity: nameAnime.opacityIn,
-                scale: nameAnime.scaleIn,
-                delay: nameAnime.delay
             })
     });
 
@@ -59,7 +47,7 @@ const Home = () => {
             </div>
 
             <div className="treeContainer">
-                <img src={Tree} alt="baren tree" style={{position: 'relative', zIndex: -1}}></img>
+                <img src={Tree} alt="cherry tree" style={{position: 'relative', zIndex: -1}}></img>
             </div>
         
         </div>

@@ -28,7 +28,6 @@ html {
 }
 
 .footerContainer {
-  // width: fit-content;
   display: flex;
   justify-content: flex-end;
 }
@@ -49,4 +48,8 @@ html {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@media all and (max-width:480px) {
+
 }

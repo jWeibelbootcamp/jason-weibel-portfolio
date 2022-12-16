@@ -14,3 +14,10 @@ a {
 a:hover {
     color: rgb(243, 182, 241);
 }
+
+@media all and (max-width:480px) {
+    div.navbar-collapse {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

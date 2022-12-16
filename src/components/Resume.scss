@@ -6,9 +6,7 @@
 }
 
 .resumeLink {
-    margin-left: 1em;
-    margin-right: 1em;
-    width: 80%;
+    width: 74vw;
 }
 
 .resume {
@@ -19,7 +17,7 @@
 
 @media all and (max-width:480px) {
     .resumeLink {
-        width: 95%;
+        width: 100%;
         margin-left: 0;
         margin-right: 0;
     }

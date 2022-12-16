@@ -16,3 +16,11 @@
     text-align: center;
     border-radius: 5px;
 }
+
+@media all and (max-width:480px) {
+    .resumeLink {
+        width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

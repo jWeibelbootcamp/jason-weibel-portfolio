@@ -2,10 +2,6 @@ $color-1: #42ebf7;
 $color-2: #f265fe;
 $color-3: #050750;
 
-* {
-  font-family: monospace;
-}
-
 html {
   min-height: 100vh;
   background: linear-gradient(20deg, $color-1, $color-2, $color-3);
@@ -55,4 +51,9 @@ html {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@media all and (max-width:480px) {
+//   html {
+// height: 200%;  }
 }

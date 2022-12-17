@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Permanent+Marker&display=swap');
+
+
 $color-1: #42ebf7;
 $color-2: #f265fe;
 $color-3: #050750;
@@ -5,7 +8,7 @@ $color-3: #050750;
 .aboutContainer {
     margin: 3em;
     text-align: center;
-	height: 81vh;
+	height: 77.5vh;
 }
 
 .photoContainer {
@@ -22,8 +25,9 @@ $color-3: #050750;
 }
 
 p {
-    color: antiquewhite;
-    font-size: 14pt;
+    font-family: 'Inconsolata', monospace;
+	color: antiquewhite;
+    font-size: 15pt;
     text-align: justify;
     text-indent: 3em;
     margin-top: 0;
@@ -72,5 +76,9 @@ p {
 	.photoContainer, .photoContainer img {
 		width: 45vw;
 		height: 45vw;
+	}
+
+	p {
+		font-size: 13pt;
 	}
 }

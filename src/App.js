@@ -11,7 +11,6 @@ import envelope from './images/envelope.svg';
 import Snowfall from 'react-snowfall';
 import './App.scss';
 
-
 // snowfall variables
 const snowflake1 = document.createElement('img');
 snowflake1.src = '/images/flower1.png';

@@ -15,7 +15,7 @@ const height = 200;
 
 const TechCarousel = () => (
     <div className="carouselContainer">
-        <Carousel className='techCarousel' height={height} width={width} xOrigin={1} autoPlay={true} >
+        <Carousel className='techCarousel' height={height} width={width} xOrigin={1} yOrigin={40} autoPlay={true} >
             <div key={1}>
                 <img className='techImage' src={JSLogo} alt="Javascript logo" />
             </div>

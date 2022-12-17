@@ -29,7 +29,7 @@ console.log(images)
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='/'>
       <div className='bodyContainer'>
         <div className='headerContainer'>
           <Header />

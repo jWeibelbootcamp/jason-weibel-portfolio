@@ -29,14 +29,14 @@ console.log(images)
 
 const App = () => {
   return (
-    <Router basename='/'>
+    <Router >
       <div className='bodyContainer'>
         <div className='headerContainer'>
           <Header />
         </div>
         <div className='mainContainer'>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/jason-weibel-portfolio" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />

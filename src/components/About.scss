@@ -29,10 +29,6 @@ p {
     margin-top: 0;
 }
 
-// .techCarousel {
-// 	position: relative;
-// }
-
 // picture border animation
 .photoContainer:before, .photoContainer:after {
 	content: '';
@@ -67,7 +63,9 @@ p {
 
 @media all and (max-width:480px) {
 	.aboutContainer {
-		width: 100vw;
+		margin: 0;
+		padding-top: 1em;
+		width: 90vw;
 		text-align: center;
 	}
 	
@@ -75,8 +73,4 @@ p {
 		width: 45vw;
 		height: 45vw;
 	}
-
-	// .techCarousel {
-	// 	width: 50%;
-	// }
 }

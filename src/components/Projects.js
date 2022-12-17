@@ -1,4 +1,11 @@
-// import React, { Component } from "react";
-// import './Projects.scss';
+import React from 'react';
+import Slider from './AwesomeSlider';
+import './Projects.scss';
 
-// export default Projects;
+const Projects = () => {
+    return (
+        <Slider />
+    )
+}
+
+export default Projects;

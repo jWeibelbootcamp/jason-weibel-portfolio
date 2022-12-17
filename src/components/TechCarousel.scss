@@ -1,15 +1,10 @@
-.techImage {
-    max-width: 125px;
-    max-height: 125px;
-    width: auto;
-    height: auto;
+.carouselContainer {
+    display: flex;
+    justify-content: center;
 }
 
-// @media all and (max-width:480px) {
-//     .techImage {
-//         max-width: 90px;
-//         max-height: 90px;
-//         width: auto;
-//         height: auto;
-//     }
-// }
+.techImage {
+  max-width: 125px;
+  max-height: 125px;
+  opacity: 0.9;
+}

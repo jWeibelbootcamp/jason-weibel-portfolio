@@ -1,6 +1,6 @@
 .resumeBox {
     margin-top: 2em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     display: flex;
     justify-content: center;
 }
@@ -17,7 +17,7 @@
 
 @media all and (max-width:480px) {
     .resumeLink {
-        width: 100%;
+        width: 95%;
         margin-left: 0;
         margin-right: 0;
     }

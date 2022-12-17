@@ -5,6 +5,7 @@ $color-3: #050750;
 .aboutContainer {
     margin: 3em;
     text-align: center;
+	height: 81vh;
 }
 
 .photoContainer {
@@ -28,9 +29,9 @@ p {
     margin-top: 0;
 }
 
-.techCarousel {
-	position: relative;
-}
+// .techCarousel {
+// 	position: relative;
+// }
 
 // picture border animation
 .photoContainer:before, .photoContainer:after {
@@ -74,4 +75,8 @@ p {
 		width: 45vw;
 		height: 45vw;
 	}
+
+	// .techCarousel {
+	// 	width: 50%;
+	// }
 }

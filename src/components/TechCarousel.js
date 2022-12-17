@@ -10,13 +10,12 @@ import MongoLogo from '../images/tech-logos/mongodblogo.svg';
 import MySQLLogo from '../images/tech-logos/mysqllogo.png';
 import ReactLogo from '../images/tech-logos/reactlogo.png';
 
+const width = 600;
+const height = 200;
+
 const TechCarousel = () => (
-    <div className="carouselContainer"
-        style={{
-            display: 'flex',
-            justifyContent: 'center',
-        }}>
-        <Carousel height={200} width={600} xOrigin={300} xRadius={300} yOrigin={80} yRadius={50} autoPlay={true} >
+    <div className="carouselContainer">
+        <Carousel className='techCarousel' height={height} width={width} xOrigin={1} autoPlay={true} >
             <div key={1}>
                 <img className='techImage' src={JSLogo} alt="Javascript logo" />
             </div>

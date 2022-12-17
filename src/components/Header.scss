@@ -20,4 +20,9 @@ a:hover {
         display: flex;
         flex-wrap: wrap;
     }
+
+    div.navbar-collapse a {
+        margin-right: .5em;
+        margin-left: .5em;
+    }
 }

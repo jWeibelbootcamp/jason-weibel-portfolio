@@ -4,7 +4,8 @@ import './Projects.scss';
 
 const Projects = () => {
     return (
-        <Slider />
+        <h1>workin' on it</h1>
+        // <Slider />
     )
 }
 

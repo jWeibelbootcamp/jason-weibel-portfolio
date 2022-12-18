@@ -35,12 +35,6 @@ html {
   justify-content: flex-end;
 }
 
-.footerContainer img {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  filter: invert(90%)
-}
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -51,9 +45,4 @@ html {
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-@media all and (max-width:480px) {
-//   html {
-// height: 200%;  }
 }

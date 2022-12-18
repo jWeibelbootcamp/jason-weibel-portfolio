@@ -37,9 +37,9 @@ const App = () => {
         <div className='mainContainer'>
           <Routes>
             <Route path="/jason-weibel-portfolio" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="jason-weibel-portfolio/about" element={<About />} />
+            <Route path="jason-weibel-portfolio/projects" element={<Projects />} />
+            <Route path="jason-weibel-portfolio/resume" element={<Resume />} />
           </Routes>
         </div>
         <div className='footerContainer'>

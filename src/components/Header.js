@@ -8,10 +8,10 @@ const Header = () => {
         <Navbar expand='lg'>
             <Container>
                 <Navbar.Collapse id='basic-navbar-nav'>
-                    <Link to='/'>Home</Link>
-                    <Link to='/about'>About</Link>
-                    <Link to='/projects'>Projects</Link>
-                    <Link to='/resume'>Resume</Link>
+                    <Link to='/jason-weibel-portfolio'>Home</Link>
+                    <Link to='jason-weibel-portfolio/about'>About</Link>
+                    <Link to='jason-weibel-portfolio/projects'>Projects</Link>
+                    <Link to='jason-weibel-portfolio/resume'>Resume</Link>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

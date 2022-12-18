@@ -1,10 +1,13 @@
 import React from 'react';
+import Carousel from '../components/ProjectCarousel';
 import './Projects.scss';
 
 const Projects = () => {
     return (
-        <h1>workin' on it</h1>
-        // <Slider />
+        <div>
+            <h1>workin' on it</h1>
+            <Carousel></Carousel>
+        </div>
     )
 }
 

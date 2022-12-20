@@ -4,7 +4,7 @@ import Photo from "../images/photo.png";
 import TechCarousel from "../components/TechCarousel";
 import './About.scss';
 
-
+// probably remove the tech carousel cuz it's just problematic - maybe add an animejs effect for the text typing out real quick.
 const About = () => {
     return (
         <div >

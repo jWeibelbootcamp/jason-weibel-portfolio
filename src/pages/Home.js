@@ -3,6 +3,8 @@ import Anime from "animejs";
 import Tree from "../images/cherryTree.png";
 import './Home.scss';
 
+// and handwriting animejs effect would be cool for the name and title. 
+
 const Home = () => {
     let nameAnime = {};
     nameAnime.opacityIn = [0, 1];

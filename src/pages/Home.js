@@ -3,8 +3,6 @@ import Anime from "animejs";
 import Tree from "../images/cherryTree.png";
 import './Home.scss';
 
-// and handwriting animejs effect would be cool for the name and title. 
-
 const Home = () => {
     let nameAnime = {};
     nameAnime.opacityIn = [0, 1];
@@ -33,12 +31,25 @@ const Home = () => {
             })
     });
 
+    // const namePath = document.querySelectorAll('.namePath');
+    
+    // const svgName = Anime({
+    //     targets: namePath,
+    //     loop: false,
+    //     direction: 'alternate',
+    //     strokeDashoffset: [Anime.setDashoffset, 0],
+    //     easing: 'easeInOutSine',
+    //     duration: 500,
+    //     delay: (el, i) => { return i * 300 }
+    //   });
+
     return (
         <div>
             <div className="homeContainer">
                 <div className="homeBody">
                     <h1 className="nameAnime">
                         <span className="name">Jason Weibel</span>
+                        {/* <span>{svgName}</span> */}
                     </h1>
                 </div>
                 <div className="homeBody">

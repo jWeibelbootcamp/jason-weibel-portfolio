@@ -1,0 +1,12 @@
+.animeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin: 50px auto;
+}
+
+.animeBox {
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+}

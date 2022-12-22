@@ -1,6 +1,7 @@
 import React from "react";
 import Anime from "animejs";
 import Tree from "../images/cherryTree.png";
+// import namePaths from "../components/name-paths.svg";
 import './Home.scss';
 
 const Home = () => {
@@ -31,7 +32,7 @@ const Home = () => {
             })
     });
 
-    // const namePath = document.querySelectorAll('.namePath');
+    // const namePath = namePaths.querySelectorAll('.path');
     
     // const svgName = Anime({
     //     targets: namePath,

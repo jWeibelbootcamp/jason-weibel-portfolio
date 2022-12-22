@@ -1,12 +1,31 @@
-.animeContainer {
+.stagger-visualizer {
     display: flex;
     flex-wrap: wrap;
-    width: 50vw;
-    margin: 50px auto;
-}
+    justify-content: center;
+    align-items: center;
+    width: 17em;
+    height: 17em;
+  }
+  
+  .stagger-visualizer div {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #FFF;
+    background-color: #FFF;
+  }
 
-.animeBox {
-    width: 30px;
-    height: 30px;
-    background-color: blueviolet;
-}
+// .animeContainer {
+//     width: 70vw;
+//     margin: 50px auto;
+// }
+
+// .animeRow {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .animeBox {
+//     width: 30px;
+//     height: 30px;
+//     background-color: blueviolet;
+// }

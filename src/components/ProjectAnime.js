@@ -3,202 +3,296 @@ import anime from "animejs";
 import './ProjectAnime.scss';
 
 const ProjectAnime = () => {
-    const animeBoxes = document.querySelectorAll('.animeBox');
+    const staggerVisualizerEl = document.querySelector('.stagger-visualizer');
+    const animeBlocks = document.querySelector('.animeBlocks');
+    const grid = [17, 17];
+    const col = grid[0];
+    const row = grid[1];
+    const numberOfElements = col * row;
     
-    anime({
-        targets: animeBoxes,
-        scale: [
-            {value: .1, easing: 'linear', duration: 3000},
-            {value: 1, easing: 'linear', duration: 3000}
-        ],
-        delay: anime.stagger(200, {grid: [14, 12], from: 'center'}),  //delays each square activation
-        loop: true
-    })
+    for (let i = 0; i < numberOfElements; i++) {
+      animeBlocks.appendChild(document.createElement('div'));
+    };
     
-    return (
-        <div className="animeContainer">
-            {/* 1 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 2 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 3 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 4 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 5 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 6 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 7 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 8 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 9 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 10 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 11 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            {/* 12 */}
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
-            <div className="animeBox"></div>
+    staggerVisualizerEl.appendChild(animeBlocks);
+    
+    // const staggersAnimation = anime.timeline({
+    //     targets: '.stagger-visualizer div',
+    //     easing: 'easeInOutSine',
+    //     delay: anime.stagger(50),
+    //     loop: true,
+    //     autoplay: false
+    //   })
+    //   .add({
+    //     translateX: [
+    //       {value: anime.stagger('-.1rem', {grid: grid, from: 'center', axis: 'x'}) },
+    //       {value: anime.stagger('.1rem', {grid: grid, from: 'center', axis: 'x'}) }
+    //     ],
+    //     translateY: [
+    //       {value: anime.stagger('-.1rem', {grid: grid, from: 'center', axis: 'y'}) },
+    //       {value: anime.stagger('.1rem', {grid: grid, from: 'center', axis: 'y'}) }
+    //     ],
+    //     duration: 1000,
+    //     scale: .5,
+    //     delay: anime.stagger(100, {grid: grid, from: 'center'})
+    //   }).add({
+    //     translateX: () => anime.random(-10, 10),
+    //     translateY: () => anime.random(-10, 10),
+    //     delay: anime.stagger(8, {from: 'last'})
+    //   })
+    //   .add({
+    //     translateX: anime.stagger('.25rem', {grid: grid, from: 'center', axis: 'x'}),
+    //     translateY: anime.stagger('.25rem', {grid: grid, from: 'center', axis: 'y'}),
+    //     rotate: 0,
+    //     scaleX: 2.5,
+    //     scaleY: .25,
+    //     delay: anime.stagger(4, {from: 'center'})
+    //   })
+    //   .add({
+    //     rotate: anime.stagger([90, 0], {grid: grid, from: 'center'}),
+    //     delay: anime.stagger(50, {grid: grid, from: 'center'})
+    //   })
+    //   .add({
+    //     translateX: 0,
+    //     translateY: 0,
+    //     scale: .5,
+    //     scaleX: 1,
+    //     rotate: 180,
+    //     duration: 1000,
+    //     delay: anime.stagger(100, {grid: grid, from: 'center'})
+    //   })
+    //   .add({
+    //     scaleY: 1,
+    //     scale: 1,
+    //     delay: anime.stagger(20, {grid: grid, from: 'center'})
+    //   })
 
-        </div>
+    //   staggersAnimation.play();
+
+      // const animeBoxes = document.querySelectorAll('.animeBox');
+
+    // anime({
+    //     targets: animeBoxes,
+    //     scale: [
+    //         { value: .1, easing: 'linear', duration: 3000 },
+    //         { value: 1, easing: 'linear', duration: 3000 }
+    //     ],
+    //     delay: anime.stagger(200, { grid: [14, 12], from: 'center' }),  //delays each square activation
+    //     loop: true,
+    // })
+
+    // const randomValues = () => {
+    //     anime({
+    //         targets: animeBoxes,
+    //         translateX: function () {
+    //             return anime.random(0, 270);
+    //         },
+    //         easing: 'easeInOutQuad',
+    //         duration: 750,
+    //         complete: randomValues
+    //     });
+    // };
+    // randomValues();
+
+    return (
+            <div className="stagger-visualizer">
+                <div className="animeBlocks"></div>
+            </div>
+        // <div className="animeContainer">
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+        //     <div className="animeRow">
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //         <div className="animeBox"></div>
+        //     </div>
+
+        // </div>
     );
 };
 

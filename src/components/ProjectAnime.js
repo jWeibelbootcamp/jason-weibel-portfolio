@@ -69,18 +69,6 @@ const ProjectAnime = () => {
 
     //   staggersAnimation.play();
 
-    const animeBoxes = document.querySelectorAll('.animeBox');
-
-    anime({
-        targets: animeBoxes,
-        scale: [
-            { value: .1, easing: 'easeOutSine', duration: 3000 },
-            { value: 1, easing: 'linear', duration: 3000 }
-        ],
-        delay: anime.stagger(200, { grid: [14, 12], from: 'center' }),  //delays each square activation
-        loop: true,
-    })
-
     // const randomValues = () => {
     //     anime({
     //         targets: animeBoxes,
@@ -93,6 +81,18 @@ const ProjectAnime = () => {
     //     });
     // };
     // randomValues();
+
+    const animeBoxes = document.querySelectorAll('.animeBox');
+
+    anime({
+        targets: animeBoxes,
+        scale: [
+            { value: .1, easing: 'easeOutSine', duration: 3000 },
+            { value: 1, easing: 'linear', duration: 3000 }
+        ],
+        delay: anime.stagger(200, { grid: [14, 12], from: 'center' }),  //delays each square activation
+        loop: true,
+    })
 
     return (
         <div className="animeContainer">

@@ -3,18 +3,18 @@ import anime from "animejs";
 import './ProjectAnime.scss';
 
 const ProjectAnime = () => {
-    const staggerVisualizerEl = document.querySelector('.stagger-visualizer');
-    const animeBlocks = document.querySelector('.animeBlocks');
+    const projectDiv = document.createElement('div');
+    const divSquare = document.createElement();
     const grid = [17, 17];
     const col = grid[0];
     const row = grid[1];
     const numberOfElements = col * row;
     
     for (let i = 0; i < numberOfElements; i++) {
-      animeBlocks.appendChild(document.createElement('div'));
+      animeDiv.appendChild(document.createElement('div'));
     };
     
-    staggerVisualizerEl.appendChild(animeBlocks);
+    projectDiv.appendChild(fragment);
     
     // const staggersAnimation = anime.timeline({
     //     targets: '.stagger-visualizer div',
@@ -95,9 +95,7 @@ const ProjectAnime = () => {
     // randomValues();
 
     return (
-            <div className="stagger-visualizer">
-                <div className="animeBlocks"></div>
-            </div>
+            projectDiv
         // <div className="animeContainer">
         //     <div className="animeRow">
         //         <div className="animeBox"></div>

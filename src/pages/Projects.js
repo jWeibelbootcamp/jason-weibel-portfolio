@@ -5,7 +5,7 @@ import './Projects.scss';
 const Projects = () => {
     return (
         <div>
-            <h1>still workin' on it</h1>
+            <h1>it's christmas give me a break</h1>
             <ProjectAnime />
         </div>
     )

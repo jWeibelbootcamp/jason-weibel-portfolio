@@ -1,5 +1,5 @@
 import React from "react";
-import Anime from "animejs";
+import anime from "animejs";
 import Tree from "../images/cherryTree.png";
 // import namePaths from "../components/name-paths.svg";
 import './Home.scss';
@@ -18,7 +18,7 @@ const Home = () => {
     const animationRef = React.useRef(null);
 
     React.useEffect(() => {
-        animationRef.current = Anime.timeline({ loop: false })
+        animationRef.current = anime.timeline({ loop: false })
             .add({
                 targets: '.nameAnime .name',
                 opacity: nameAnime.opacityIn,
@@ -32,25 +32,12 @@ const Home = () => {
             })
     });
 
-    // const namePath = namePaths.querySelectorAll('.path');
-    
-    // const svgName = Anime({
-    //     targets: namePath,
-    //     loop: false,
-    //     direction: 'alternate',
-    //     strokeDashoffset: [Anime.setDashoffset, 0],
-    //     easing: 'easeInOutSine',
-    //     duration: 500,
-    //     delay: (el, i) => { return i * 300 }
-    //   });
-
     return (
         <div>
             <div className="homeContainer">
                 <div className="homeBody">
                     <h1 className="nameAnime">
                         <span className="name">Jason Weibel</span>
-                        {/* <span>{svgName}</span> */}
                     </h1>
                 </div>
                 <div className="homeBody">

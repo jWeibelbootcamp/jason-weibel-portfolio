@@ -1,0 +1,15 @@
+p {
+  font-family: "Inconsolata", monospace;
+  color: antiquewhite;
+  font-size: 17pt;
+  text-align: justify;
+  text-indent: 3em;
+  margin-top: 0;
+  white-space: pre-wrap;
+}
+
+@media all and (max-width: 480px) {
+  p {
+    font-size: 13pt;
+  }
+}

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Permanent+Marker&display=swap');
 
-
 $color-1: #42ebf7;
 $color-2: #f265fe;
 $color-3: #050750;
@@ -22,15 +21,6 @@ $color-3: #050750;
 .photoContainer img {
     width: 35vw;
     border-radius: 10px;
-}
-
-p {
-    font-family: 'Inconsolata', monospace;
-	color: antiquewhite;
-    font-size: 17pt;
-    text-align: justify;
-    text-indent: 3em;
-    margin-top: 0;
 }
 
 // picture border animation
@@ -76,9 +66,5 @@ p {
 	.photoContainer, .photoContainer img {
 		width: 45vw;
 		height: 45vw;
-	}
-
-	p {
-		font-size: 13pt;
 	}
 }

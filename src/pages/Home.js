@@ -1,7 +1,6 @@
 import React from "react";
 import anime from "animejs";
 import Tree from "../images/cherryTree.png";
-// import namePaths from "../components/name-paths.svg";
 import './Home.scss';
 
 const Home = () => {

@@ -1,10 +1,12 @@
 $color-1: #42ebf7;
 $color-2: #f265fe;
 $color-3: #050750;
+$color-4: #112155;
+$color-5: #040526;
 
 html {
   min-height: 100vh;
-  background: linear-gradient(20deg, $color-1, $color-2, $color-3);
+  background: linear-gradient(20deg, $color-1, $color-2, $color-3, $color-4, $color-5);
     animation: gradient 25s ease infinite;
     background-size: 250%;
     background-position: center center;

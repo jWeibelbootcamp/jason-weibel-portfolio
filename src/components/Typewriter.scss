@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Permanent+Marker&display=swap');
+
 p {
   font-family: "Inconsolata", monospace;
   color: antiquewhite;
@@ -5,7 +7,7 @@ p {
   text-align: justify;
   text-indent: 3em;
   margin-top: 0;
-  white-space: pre-wrap;
+  white-space: pre-wrap; // makes the line breaks work.
 }
 
 @media all and (max-width: 480px) {

@@ -1,0 +1,73 @@
+$color-1: #42ebf7;
+$color-2: #f265fe;
+$color-3: #050750;
+$color-4: #112155;
+$color-5: #040526;
+$width: 30vw;
+$radius: 10px;
+$padding: 5px;
+
+div.card {
+    width: $width;
+    border-style: solid;
+    border-radius: $radius;
+}
+
+.card-image-container {
+    width: $width;
+    border-radius: $radius;
+}
+
+img.card-img-top {
+    width: $width;
+    border-radius: $radius;
+    // padding: $padding;
+
+}
+
+div.card-title {
+    text-align: center;
+}
+
+p.card-text {
+    text-indent: 0;
+    font-size: 14pt;
+    padding: $padding;
+}
+
+a.card-link {
+    font-size: 14pt;
+    padding: $padding;
+}
+
+// picture border animation
+.card-image-container:before, .card-image-container:after {
+	content: '';
+	position: absolute;
+	// left: -4px;
+	// top: -4px;
+	background: linear-gradient(45deg, $color-1, $color-2, $color-3);
+	background-size: 200%;
+	width: calc(100% + 8px);
+	height: calc(100% + 8px);
+	z-index: -1;
+	animation: gradient 5s ease infinite;
+    border-radius: $radius;
+}
+
+.card-image-container:after {
+    filter: blur(50px);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+// end animation

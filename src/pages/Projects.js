@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectData from '../components/ProjectData';
+import ProjectArray from '../components/ProjectArray';
 import ProjectCard from '../components/ProjectCard';
 import './Projects.scss';
 
@@ -7,21 +7,9 @@ const Projects = () => {
     return (
         <div className='project-list'>
             <div className='row'>
-                {ProjectData.map(Projects => {
-                    return (
-                        <div className='col-md-4'>
-                            <div className='project position-relative '>
-                                <img className="project-image " src={Projects.image} style={{ background: "cover" }} />
-                                <div className='project-content'>
-                                    <h5>{Projects.title}</h5>
-                                    <p>{Projects.description}</p>
-                                    <button className='primary-button'><a href={Projects.code}>Code</a></button>
-                                    <button className='primary-button'><a href={Projects.demo}>Demo</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    );
-                })};
+                {ProjectArray.map(project => {
+                    <ProjectCard image={project.image} title={project.title} description={project.description} gitHub={project.gitHub} deployed={project.deployed}/>
+                })}
             </div>
         </div>
     );

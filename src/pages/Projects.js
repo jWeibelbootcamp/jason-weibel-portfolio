@@ -21,3 +21,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+// idea: make entire card clickable with a simple effect to enlarge as a modal. 

@@ -14,6 +14,13 @@ const projectArray = [
         deployed: "https://shrouded-headland-51374.herokuapp.com/",
     },
     {
+        title: "Muttel 6",
+        image: Muttel6,
+        description: "A full-stack pet care, lodging, and grooming site utilizing Handlebars, MySQL, and Sequelize.",
+        gitHub: "https://github.com/jWeibelbootcamp/Google-OAuth-Login",
+        deployed: "https://howl-ton.herokuapp.com/",
+    },
+    {
         title: "Cup O'Tears Coffee",
         image: CupOTears,
         description: "A single-page, reactive website allowing a user to search for various coffee drinks, returning an image, description, ingredients, and nutritional facts. Includes links to a Coffee Guide, maps showing local coffee shops, and a personal notepad saving to local storage.",
@@ -26,13 +33,6 @@ const projectArray = [
         description: "A single page weather dashboard application with a a search function, including recent searches saved to local storage. Displays a large card for the current weather with the city name, weather icon, current conditions description, temperature in degrees Farenheit, and humidity.",
         gitHub: "https://github.com/jWeibelbootcamp/Weather-Dashboard",
         deployed: "https://jweibelbootcamp.github.io/Weather-Dashboard/",
-    },
-    {
-        title: "Muttel 6",
-        image: Muttel6,
-        description: "A full-stack pet care, lodging, and grooming site utilizing Handlebars, MySQL, and Sequelize.",
-        gitHub: "https://github.com/jWeibelbootcamp/Google-OAuth-Login",
-        deployed: "https://howl-ton.herokuapp.com/",
     },
     {
         title: "Team Generator",

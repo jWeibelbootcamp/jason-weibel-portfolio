@@ -11,7 +11,7 @@ const Projects = () => {
                 {ProjectArray.map(project => {
                     return (
                         <Col>
-                            <ProjectCard image={project.image} title={project.title} description={project.description} gitHub={project.gitHub} deployed={project.deployed} />
+                            <ProjectCard image={project.image} description={project.description} gitHub={project.gitHub} deployed={project.deployed} />
                         </Col>
                     )
                 })}

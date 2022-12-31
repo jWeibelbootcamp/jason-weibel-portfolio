@@ -10,8 +10,11 @@ const ProjectCard = (props) => {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.description}</Card.Text>
-        <Card.Link>{props.gitHub}</Card.Link>
-        <Card.Link>{props.deployed}</Card.Link>
+        <div className="card-link-container">
+          <Card.Link href='{props.gitHub}'>GitHub Repo</Card.Link>
+          <text className="link-separator">|</text>
+          <Card.Link href='{props.deployed}'>Deployed App</Card.Link>
+        </div>
       </Card.Body>
     </Card>
   );

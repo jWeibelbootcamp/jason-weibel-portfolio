@@ -3,56 +3,45 @@ $color-2: #f265fe;
 $color-3: #050750;
 $color-4: #112155;
 $color-5: #040526;
-$width: 30vw;
 $radius: 10px;
-$padding: 5px;
+$padding: 0.5vw;
+$margin: 0.75vw;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: $margin;
+}
 
 div.card {
-    width: $width;
+    width: 30vw;
+    margin: $margin;
     border-style: solid;
+    border-color: antiquewhite;
     border-radius: $radius;
 }
 
 .card-image-container {
-    width: $width;
-    border-radius: $radius;
+    position: relative;
+    height: auto;
+    width: auto;
 }
 
-img.card-img-top {
-    width: $width;
-    border-radius: $radius;
-    // padding: $padding;
-
-}
-
-div.card-title {
-    text-align: center;
-}
-
-p.card-text {
-    text-indent: 0;
-    font-size: 14pt;
-    padding: $padding;
-}
-
-a.card-link {
-    font-size: 14pt;
-    padding: $padding;
-}
-
-// picture border animation
+// card-image border animation
 .card-image-container:before, .card-image-container:after {
 	content: '';
 	position: absolute;
-	// left: -4px;
-	// top: -4px;
+    left: 0px;
+	top: 0px;
 	background: linear-gradient(45deg, $color-1, $color-2, $color-3);
 	background-size: 200%;
-	width: calc(100% + 8px);
-	height: calc(100% + 8px);
+    width: 100%;
+    height: 100%;
 	z-index: -1;
 	animation: gradient 5s ease infinite;
-    border-radius: $radius;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
 }
 
 .card-image-container:after {
@@ -71,3 +60,37 @@ a.card-link {
 	}
 }
 // end animation
+
+img.card-img-top {
+    width: 29vw;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    padding-top: $padding;
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+p.card-text {
+    text-indent: 0;
+    font-size: 13pt;
+    padding: $padding;
+    border-top-style: solid;
+}
+
+.card-link-container {
+    display: flex;
+    justify-content: center;
+    padding: $padding;
+}
+
+a.card-link {
+    font-size: 13pt;
+}
+
+.link-separator {
+    font-family: 'Permanent Marker', cursive;
+    color: antiquewhite;
+    font-size: 13pt;
+    padding-left: $padding;
+    padding-right: $padding;
+}

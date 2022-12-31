@@ -4,8 +4,8 @@ import './Typewriter.scss';
 
 const TypewriterBlurb = () => {
     return (
-        <div className="blurb">
-            <p>
+        <div>
+            <p className="blurb">
                 <Typewriter
                     options={{
                         delay: 1,

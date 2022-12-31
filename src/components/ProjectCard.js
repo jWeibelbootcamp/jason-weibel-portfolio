@@ -12,9 +12,9 @@ const ProjectCard = (props) => {
         <Card.Text>{props.description}</Card.Text>
       </Card.Body>
       <Card.Footer>
-        <Card.Link href='{props.gitHub}'>GitHub Repo</Card.Link>
+        <Card.Link href={props.gitHub}>GitHub Repo</Card.Link>
         <text className='link-separator'>|</text>
-        <Card.Link href='{props.deployed}'>Deployed App</Card.Link>
+        <Card.Link href={props.deployed}>Deployed App</Card.Link>
       </Card.Footer>
     </Card>
   );

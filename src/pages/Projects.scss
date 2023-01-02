@@ -26,7 +26,7 @@ $margin: 0.75vw;
   border-style: solid;
   border-color: antiquewhite;
   border-radius: $radius;
-//   flex-direction: column;
+  //   flex-direction: column;
 }
 
 .card-image-container {
@@ -79,8 +79,8 @@ img.card-img-top {
 }
 
 // .card-body {
-    // display: flex;
-    // flex-direction: column;
+// display: flex;
+// flex-direction: column;
 // }
 
 .card-text {
@@ -91,13 +91,13 @@ img.card-img-top {
   font-family: "Inconsolata", monospace;
   color: antiquewhite;
   text-align: justify;
-//   flex: 1 0 auto;
+  //   flex: 1 0 auto;
 }
 
 .card-footer {
   display: flex;
   justify-content: center;
-//   flex-shrink: 0;
+  //   flex-shrink: 0;
   padding: $padding;
 }
 
@@ -111,4 +111,31 @@ a.card-link {
   font-size: 13pt;
   padding-left: $padding;
   padding-right: $padding;
+}
+
+@media all and (max-width: 480px) {
+  .col {
+    margin-bottom: 2vw;
+  }
+
+  .card {
+    width: 90vw;
+  }
+
+  img.card-img-top {
+    width: 89vw;
+  }
+
+  .card-text {
+    padding: 2vw;
+  }
+
+  .link-separator {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .card-image-container:after {
+    filter: none;
+  }
 }

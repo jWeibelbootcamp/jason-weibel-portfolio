@@ -45,13 +45,19 @@ h3 {
     }
 
     h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     h3 {
         font-size: 1.5em
     }
 
-    .name, .title {display:flex;
-        text-align: center;}
+    .name, .title {
+        display:flex;
+        text-align: center;
+    }
+
+    .name {
+        padding-top: 15vh;
+    }
 }

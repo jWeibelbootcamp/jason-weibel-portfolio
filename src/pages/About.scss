@@ -15,7 +15,7 @@ $color-5: #040526;
     height: 35vw;
     width: 35vw;
     float: left;
-    margin-right: 1.5em;
+    margin-right: 2vw;
 }
 
 .photoContainer img {
@@ -67,5 +67,10 @@ $color-5: #040526;
 	.photoContainer, .photoContainer img {
 		width: 45vw;
 		height: 45vw;
+	}
+
+	.photoContainer {
+		margin-right: 5vw;
+		margin-bottom: 2vw;
 	}
 }
